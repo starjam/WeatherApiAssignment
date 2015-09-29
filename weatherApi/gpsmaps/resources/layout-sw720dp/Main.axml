@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Spinner
+        android:layout_width="201.3dp"
+        android:layout_height="56.8dp"
+        android:id="@+id/spCity"
+        android:layout_marginBottom="15.5dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <Button
+        android:text="Get CITY WEATHER"
+        android:layout_width="202.8dp"
+        android:layout_height="59.6dp"
+        android:id="@+id/btnOpenCityList" />
+    <Button
+        android:text="Get MY LOCATION"
+        android:layout_width="201.2dp"
+        android:layout_height="59.6dp"
+        android:id="@+id/btnGetLocation" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44.9dp"
+        android:id="@+id/txtLat"
+        android:hint="LATITUDE: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="43.6dp"
+        android:id="@+id/txtLong"
+        android:hint="LONGITUDE: "
+        android:layout_marginBottom="7.6dp" />
+    <Button
+        android:text="Get MY LOCATION ADDRESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGetAddress" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="108.1dp"
+        android:id="@+id/txtAddress" />
+    <Button
+        android:text="Show MY LOCATION ON MAP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShowinMap" />
+</LinearLayout>

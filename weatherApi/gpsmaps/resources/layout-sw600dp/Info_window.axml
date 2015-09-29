@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/cityText"
+        android:textSize="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Auckland"
+        android:textColor="#FFE966"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginLeft="10.0dp" />
+<!--location country-->
+    <TextView
+        android:id="@+id/cityTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_centerHorizontal="true"
+        android:text="21"
+        android:textSize="100dip"
+        android:textColor="#FFF702" />
+    <TextView
+        android:id="@+id/unittemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_toRightOf="@id/cityTemp"
+        android:textSize="30dip"
+        android:layout_alignBaseline="@id/cityTemp"
+        android:text="oC"
+        android:textColor="#FFF702" />
+<!-- Image weather condition -->
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView1"
+        android:layout_alignTop="@id/cityTemp"
+        android:layout_toRightOf="@id/cityTemp" />
+    <TextView
+        android:id="@+id/skydesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:layout_toRightOf="@id/cityTemp"
+        android:layout_alignStart="@id/imageView1"
+        android:text="scattered clouds"
+        android:textColor="#fff" />
+</RelativeLayout>

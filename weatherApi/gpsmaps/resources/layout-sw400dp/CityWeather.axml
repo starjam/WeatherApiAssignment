@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:actionBarNavMode="list">
+    <TextView
+        android:id="@+id/cityName"
+        android:textSize="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="sw400"
+        android:textColor="#FFF702"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginLeft="10.0dp" />
+<!-- CURRENT DATE -->
+    <TextView
+        android:text="DATE: "
+        android:id="@+id/textViewDateCurrent"
+        android:layout_marginTop="2.0dp"
+        android:layout_marginLeft="30.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cityName"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/dateCurrent"
+        android:text="date current"
+        android:textColor="#FFF702"
+        android:layout_toRightOf="@id/cityName"
+        android:layout_below="@id/textViewDateCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:layout_marginLeft="30.0dp"
+        android:layout_alignBaseline="@id/cityName"
+        android:textSize="12dip" />
+<!-- CURRENT TIME -->
+    <TextView
+        android:id="@+id/textViewTimeCurrent"
+        android:text="LAST UPDATE:"
+        android:layout_marginTop="2.0dp"
+        android:layout_marginLeft="60.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewDateCurrent"
+        android:textSize="12dip" />
+    <TextView
+        android:id="@+id/timeCurrent"
+        android:textColor="#FFF702"
+        android:text="time current"
+        android:layout_toRightOf="@id/textViewDateCurrent"
+        android:layout_below="@id/textViewTimeCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:layout_marginLeft="60.0dp"
+        android:layout_alignBaseline="@id/cityName"
+        android:textSize="12dip" />
+<!--TEMPERATURE-->
+    <TextView
+        android:id="@+id/cityTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cityName"
+        android:text="21"
+        android:layout_marginTop="10.0dp"
+        android:textSize="100dip"
+        android:textColor="#FFF702" />
+    <TextView
+        android:id="@+id/unittemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityName"
+        android:layout_toRightOf="@id/cityTemp"
+        android:textSize="30dip"
+        android:layout_alignBaseline="@id/cityTemp"
+        android:text="oC"
+        android:textColor="#FFF702" />
+<!-- IMAGE WEATHER CONDITIONS -->
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView1"
+        android:layout_alignTop="@id/cityTemp"
+        android:layout_toRightOf="@id/cityTemp" />
+    <TextView
+        android:id="@+id/skydesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:layout_toRightOf="@id/cityTemp"
+        android:text="scattered clouds"
+        android:textColor="#fff" />
+<!-- FORECASTS-->
+<!--TABLE LAYOUT FOR ???-->
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResultsTable"
+        android:padding="2dp"
+        android:visibility="visible"
+        android:text="VIOLET"
+        android:background="#ee82ee"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_alignParentBottom="true">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <TextView
+                android:text="Wednesday"
+                android:id="@+id/TextView02"
+                android:layout_height="wrap_content"
+                android:background="#f00"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_marginRight="0.0dp" />
+            <TextView
+                android:text="Thursday"
+                android:layout_height="wrap_content"
+                android:background="#ffa500"
+                android:gravity="center"
+                android:textColor="#000"
+                android:id="@+id/TextView03"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_marginRight="0.0dp" />
+            <TextView
+                android:text="Friday"
+                android:layout_height="wrap_content"
+                android:background="#0f0"
+                android:gravity="center"
+                android:textColor="#000"
+                android:id="@+id/TextView04"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_marginRight="0.0dp" />
+            <TextView
+                android:text="Saturday"
+                android:layout_height="wrap_content"
+                android:background="#ffff00"
+                android:gravity="center"
+                android:textColor="#000"
+                android:id="@+id/TextView05"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_marginRight="0.0dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2">
+        <!--RED 1 IMAGE WEATHER-->
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_alignTop="@id/cityTemp"
+                android:layout_toRightOf="@id/cityTemp" />
+        <!--ORANGE 2 IMAGE WEATHER-->
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:layout_alignTop="@id/cityTemp"
+                android:layout_toRightOf="@id/cityTemp" />
+        <!--GREEN 3 IMAGE WEATHER-->
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:layout_alignTop="@id/cityTemp"
+                android:layout_toRightOf="@id/cityTemp" />
+        <!--YEKKIW 4 IMAGE WEATHER-->
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:layout_alignTop="@id/cityTemp"
+                android:layout_toRightOf="@id/cityTemp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+        <!-- - CLOUD ACTION-->
+            <TextView
+                android:id="@+id/skydesc2"
+                android:layout_column="0"
+                android:text=" clouds"
+                android:textColor="#FFFF4D"
+                android:textSize="10sp"
+                android:layout_marginRight="0.0dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:scrollHorizontally="true" />
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/skydesc3"
+                android:text="scattered clouds"
+                android:textSize="10sp"
+                android:textColor="#FFFF4D"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:id="@+id/skydesc4"
+                android:text="scattered clouds"
+                android:textSize="12dip"
+                android:textColor="#FFFF4D"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:id="@+id/skydesc5"
+                android:text="scattered clouds"
+                android:textSize="12dip"
+                android:textColor="#FFFF4D"
+                android:layout_width="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4">
+        <!-- - TEMPERATURE-->
+            <TextView
+                android:id="@+id/cityTemp2"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:textSize="30dip"
+                android:textColor="#FFF702"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/cityTemp3"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:textSize="30dip"
+                android:textColor="#FFF702"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/cityTemp4"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:textSize="30dip"
+                android:textColor="#FFF702"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/cityTemp5"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:textSize="30dip"
+                android:textColor="#FFF702"
+                android:gravity="center" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5">
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:textColor="#FFFF4D"
+                android:gravity="center" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:text=""
+                android:textColor="#FFFF4D"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="2"
+                android:textColor="#FFFF4D"
+                android:gravity="center" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6">
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:textColor="#FFFF4D"
+                android:gravity="center"
+                android:layout_height="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:text=""
+                android:textColor="#FFFF4D"
+                android:gravity="center" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7">
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:gravity="center" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:text=""
+                android:textColor="#FFFF4D"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

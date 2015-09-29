@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="62.1dp"
+        android:id="@+id/spCity"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="15.5dp"
+        android:backgroundTint="#00ffffff"
+        android:textColor="#80bebebe"
+        android:backgroundTintMode="screen"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginRight="15dp" />
+    <EditText
+        android:id="@+id/txtlatlongposition"
+        android:layout_width="match_parent"
+        android:layout_height="59.6dp"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="5.5dp"
+        android:text="MY CURRENT LAT/LONG POSITION"
+        android:textColor="#FFF702"
+        android:textSize="15sp" />
+    <EditText
+        android:layout_width="241.0dp"
+        android:layout_height="59.6dp"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="5.5dp"
+        android:id="@+id/txtLat"
+        android:hint="LATITUDE: "
+        android:textSize="15sp" />
+    <EditText
+        android:layout_width="241.0dp"
+        android:layout_height="59.6dp"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="5.5dp"
+        android:id="@+id/txtLong"
+        android:hint="LONGITUDE: "
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:text="VIEW MY LOCATION WEATHER"
+        android:layout_width="241.0dp"
+        android:layout_height="59.6dp"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:textColor="#FFF702"
+        android:background="@android:color/holo_red_dark" />
+    <Button
+        android:text="VIEW MY LOCATION ON MAP"
+        android:id="@+id/btnShowinMap"
+        android:layout_width="241.0dp"
+        android:layout_height="59.6dp"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="15.5dp"
+        android:textSize="15sp"
+        android:textColor="#FFF702"
+        android:background="@android:color/holo_red_dark" />
+</LinearLayout>
